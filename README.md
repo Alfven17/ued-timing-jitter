@@ -2,4 +2,4 @@
 
 calculation of arrival time jitter in UED
 
-Requires jax and diffrax
+The AD implementation requires jax and diffrax.
