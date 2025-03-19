@@ -6,6 +6,8 @@ extract derivative first, for a reference point
 then given any jitter, calculate TOA jitter
 """
 import numpy as np
+import jax
+jax.config.update("jax_enable_x64", True)
 import jax.numpy as jnp
 from jax import vmap, grad, jit, jacrev, jacfwd
 from diffrax import diffeqsolve, ODETerm, SaveAt, LinearInterpolation, Tsit5, Dopri5, Dopri8
